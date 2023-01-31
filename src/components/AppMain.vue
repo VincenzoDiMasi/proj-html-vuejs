@@ -1,5 +1,6 @@
 <script>
 export default {
+  name: 'AppMain',
   data() {
     return {
       // Your data properties 

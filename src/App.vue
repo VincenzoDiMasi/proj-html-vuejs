@@ -22,8 +22,17 @@ export default {
 </script>
 
 <template>
-  
+  <AppHeader></AppHeader>
+  <AppMain></AppMain>
+  <AppFooter></AppFooter>
 </template>
 
 <style lang="scss">
+a {
+    text-decoration: none;
+    color: black;
+}
+li {
+    list-style-type: none;
+}
 </style>

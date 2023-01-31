@@ -1,9 +1,6 @@
 <script>
-import NavbarHeader from './NavbarHeader.vue';
-import JumbotronHeader from './JumbotronHeader.vue'
 export default {
-    name: 'AppHeader',
-    components : {NavbarHeader, JumbotronHeader},
+    name: 'JumbotronHeader',
   data() {
     return {
         
@@ -22,12 +19,8 @@ export default {
 </script>
 
 <template>
-  <header>
-    <NavbarHeader></NavbarHeader>
-    <JumbotronHeader></JumbotronHeader>
-  </header>
+  
 </template>
 
 <style lang="scss" scoped>
-
 </style>
