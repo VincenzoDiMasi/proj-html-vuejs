@@ -22,12 +22,17 @@ export default {
 </script>
 
 <template>
-  <header>
+  <header class="bg-custom">
     <NavbarHeader></NavbarHeader>
     <JumbotronHeader></JumbotronHeader>
   </header>
 </template>
 
 <style lang="scss" scoped>
+header {
+    border: 1px dashed black;
+    min-height: 600px;
+
+}
 
 </style>
