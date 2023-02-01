@@ -1,8 +1,8 @@
 <script>
-import CardComponent from './CardComponent.vue'
+import CardJumbotron from './CardJumbotron.vue'
 export default {
     name: 'JumbotronHeader',
-    components: {CardComponent},
+    components: {CardJumbotron},
   data() {
     return {
         cards: [
@@ -36,7 +36,7 @@ export default {
     <div class="container">
         <div class="row justify-content-between">
             <div class="col-sm-4">
-                <CardComponent v-for="card in cards" :card="card" :key="card.id"></CardComponent>
+                <CardJumbotron v-for="card in cards" :card="card" :key="card.id"></CardJumbotron>
             </div>
             <div class="col-sm-8 ">
                 
@@ -54,6 +54,7 @@ export default {
     background-repeat: no-repeat;
     background-color: #F5F1ED;
     min-height: 500px;
+    
     // display: flex;
     // align-items: center;
     // transform: rotate(180deg)
