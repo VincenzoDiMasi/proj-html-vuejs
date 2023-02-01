@@ -1,8 +1,21 @@
 <script>
+import CardComponent from './CardComponent.vue'
 export default {
     name: 'JumbotronHeader',
+    components: {CardComponent},
   data() {
     return {
+        cards: [
+                {
+                    title: 'Complete Your Dreams in Javas Programming',
+                    text: 'Learn any coding program in distance and for a responsable fee. You do not have to struggle alone, you have got our assistance and help.',
+                    button: 'Download free E-book',
+                    id: 1
+                },
+                
+               
+            ] 
+        
         
     };
   },
@@ -20,7 +33,16 @@ export default {
 
 <template>
   <section id="jumbotron">
-
+    <div class="container">
+        <div class="row">
+  <div class="col-sm-4">
+    <CardComponent v-for="card in cards" :card="card" :key="card.id"></CardComponent>
+  </div>
+  <div class="col-sm-8">
+    
+  </div>
+</div>
+    </div>
   </section>
 </template>
 
@@ -30,7 +52,9 @@ export default {
     background-repeat: no-repeat;
     background-color: #F5F1ED;
     min-height: 500px;
-    filter: hue-rotate(180deg);
+    display: flex;
+    align-items: center;
+    // transform: rotate(180deg)
     
     
     

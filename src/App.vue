@@ -28,6 +28,9 @@ export default {
 </template>
 
 <style lang="scss">
+* {
+    color: #3F3A64;
+}
 a {
     text-decoration: none;
     color: black;

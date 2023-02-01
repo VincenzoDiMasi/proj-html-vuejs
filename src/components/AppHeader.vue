@@ -30,7 +30,6 @@ export default {
 
 <style lang="scss" scoped>
 header {
-    border: 1px dashed black;
     min-height: 600px;
 
 }
