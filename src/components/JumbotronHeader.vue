@@ -34,14 +34,16 @@ export default {
 <template>
   <section id="jumbotron">
     <div class="container">
-        <div class="row">
-  <div class="col-sm-4">
-    <CardComponent v-for="card in cards" :card="card" :key="card.id"></CardComponent>
-  </div>
-  <div class="col-sm-8">
-    
-  </div>
-</div>
+        <div class="row justify-content-between">
+            <div class="col-sm-4">
+                <CardComponent v-for="card in cards" :card="card" :key="card.id"></CardComponent>
+            </div>
+            <div class="col-sm-8 ">
+                
+                    <img src="../assets/img/home-5-hero-image.png" alt="">
+               
+            </div>
+        </div>
     </div>
   </section>
 </template>
@@ -52,11 +54,14 @@ export default {
     background-repeat: no-repeat;
     background-color: #F5F1ED;
     min-height: 500px;
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
     // transform: rotate(180deg)
     
-    
+    img{
+        height: 450px;
+        margin-left: 25%;
+    }
     
 }
 </style>

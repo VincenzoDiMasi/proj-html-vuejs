@@ -34,7 +34,7 @@ props: {
 div {
     div {
         margin-left: 32px;
-        // margin-top: 130px;
+        margin-top: 100px;
     }
 }
 .btn-green{
