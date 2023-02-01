@@ -24,7 +24,7 @@ props: {
       <div>
         <h1>{{ card.title }}</h1>
         <p>{{ card.text }}</p>
-        <a href="#" class="btn btn-green">{{ card.button }}</a>
+        <a href="#" v-html="card.button" class="btn btn-green"></a>
       </div>
     </div>
 </template>

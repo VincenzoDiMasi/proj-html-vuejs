@@ -41,6 +41,7 @@ li {
 .highlighted {
   color: #20AD96;
   margin: 0 10px;
+  font-weight: 1;
 }
 .grey-title {
   color: #696969;

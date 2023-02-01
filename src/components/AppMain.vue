@@ -77,7 +77,16 @@ export default {
           
         </div>
         <div class="col">
-
+          <h6 class="grey-title">DREAM WITH MAXCOACH</h6>
+          <div>
+            <h1>Construct A <span class="highlighted">Stunning</span>  <br> Career Perspective</h1>        
+          </div>
+          <div class="menu-item d-flex justify-content-between mt-4">
+            <p>Multiple Platforms Supported for Teaching & Studying </p> <a href="#"><i class="fa-solid fa-circle-minus text-white"></i></a>
+          </div>
+          <div class="text-item">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, quae excepturi! Numquam consequatur aspernatur, vitae necessitatibus quod earum dignissimos. Cupiditate excepturi sed dolorem quia quisquam facere quasi delectus tenetur adipisci.</p>
+          </div>
         </div>
       </div>
 
@@ -102,8 +111,33 @@ section {
     margin-left: 120px;
     height: 450px;
   }
+
+
   }
-  
+    .menu-item {
+    background-color: #20AD96;
+    border-radius: 10px 10px 0 0 ;
+    border: 1px solid #20AD96;
+    height: 50px;
+    padding: 10px;
+    
+    p {
+      color: white;
+      font-weight: bold;
+
+    }
+  }
+
+  .text-item {
+    box-shadow: 2px 4px #dcdbdb;;
+    border-radius: 0 0 10px 10px;
+    padding: 10px;
+
+    p{
+      color: #696969;
+      font-size: 12px;
+    }
+  }
 }
 
 
