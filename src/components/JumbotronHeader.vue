@@ -9,7 +9,7 @@ export default {
                 {
                     title: 'Complete Your Dreams in Javas Programming',
                     text: 'Learn any coding program in distance and for a responsable fee. You do not have to struggle alone, you have got our assistance and help.',
-                    button: '<i class="fa-solid fa-circle-minus"></i> Download free E-book',
+                    button: '<i class="fa-solid fa-download text-white"></i> Download free E-book',
                     id: 1
                 },
                 
