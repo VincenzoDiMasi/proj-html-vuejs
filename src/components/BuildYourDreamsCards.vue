@@ -26,7 +26,7 @@ props: {
               <div class="card-body">
                 <h5>{{ card.title }}</h5>
                 <p class="card-text text-black">{{ card.text }}</p>
-                <a class="text-prpl" href="#">{{ card.button }}</a>
+                <a class="text-prpl" href="#">{{ card.button }} <i class="fa-solid fa-arrow-right-long text-prpl"></i></a>
               </div>
             </div>
         </div>        
@@ -44,7 +44,7 @@ img {
   border: 0;
 }
 
-a {
+.text-prpl {
     color: #8C89A2;
 }
 </style>

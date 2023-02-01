@@ -65,10 +65,23 @@ export default {
         <div class="row">
           <BuildYourDreamsCards v-for="card in cardsBuildYourDream" :card="card" :key="card.id"></BuildYourDreamsCards>
         </div>
-        
-      
       </div>
       
+    </section>
+
+    <section id="career" class="container my-5">
+      <div class="row">
+        <div class="col ms-5 underlay">
+          <!-- <img class="underlay" src="../assets/img/underlay-shape-lilla.svg" alt=""> -->
+          <img src="../assets/img/about-us-03-image-01.png" alt="">
+          
+        </div>
+        <div class="col">
+
+        </div>
+      </div>
+
+
     </section>
   </main>
 </template>
@@ -76,6 +89,21 @@ export default {
 <style lang="scss" scoped>
 section {
   min-height: 400px;
+}
+#career {
+
+  .underlay {
+    background-image: url('../assets/img/underlay-shape-lilla.svg');
+    background-repeat: no-repeat;
+    background-position: 0% 40%;
+    background-size: 350px;
+
+    img {
+    margin-left: 120px;
+    height: 450px;
+  }
+  }
+  
 }
 
 
