@@ -231,12 +231,36 @@ export default {
           
         </div>
         <div class="col ms-5 underlay">
-          <!-- <img class="underlay" src="../assets/img/underlay-shape-lilla.svg" alt=""> -->
+          
           <img src="../assets/img/home-5-image-01.png" alt="">
           
         </div>
         
       </div>
+    </section>
+    <section id="where-learn" class="mt-5 container">
+      <div class="row">
+        <div class="col ms-5 underlay">
+          
+          <img src="../assets/img/home-5-image-02.png" alt="">
+          
+        </div>
+        <div class="col-5 w-25">
+          <h6 class="grey-title">WHAT ARE YOU LOOKING FOR?</h6>
+          <div>
+            <h1>Learn On Your <span class="highlighted">mobile</span> Anytime!</h1> 
+            <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur cupiditate dicta minus eos ratione officia incidunt pariatur deleniti. Sapiente maxime suscipit at tempora voluptates rerum sunt saepe ullam voluptatum facere!</p>       
+            <a href="#" class="btn btn-green fw-bold my-3">Download our App</a>
+          </div>
+        </div>
+
+      </div>
+
+
+    </section>
+
+    <section>
+      
     </section>
   </main>
 </template>
@@ -374,6 +398,35 @@ export default {
     height: 450px;
   }
 }
+}
+
+#where-learn {
+  .underlay {
+    background-image: url('../assets/img/underlay-shape-grey.svg');
+    background-repeat: no-repeat;
+    background-position: 0% 40%;
+    background-size: 350px;
+    margin-right: -585px;
+
+    img {
+    margin-left: 120px;
+    height: 450px;
+  }
+}
+
+.grey-title {
+  margin-top: 80px;
+}
+  
+}
+.btn-green{
+    background-color: $brandColor;
+    color: white;
+
+    .txt-wht {
+      color: $bgMainColor;
+      margin-left: 5px;
+    }
 }
 
 
