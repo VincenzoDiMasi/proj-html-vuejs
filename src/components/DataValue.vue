@@ -1,0 +1,36 @@
+<script>
+export default {
+  name: 'DataValue',
+  data() {
+    return {
+      
+    };
+  },
+  props: {
+  number: Object
+},
+  methods: {
+    // Your component methods 
+  },
+  computed: {
+    // Computed properties 
+  },
+  created() {
+    // Lifecycle hook 
+  }
+};
+</script>
+
+<template>
+  <div class="col">
+            <h2 class="text-center">{{ number.title }}</h2>
+            <h6 class="text-center">{{ number.text }}</h6>
+          </div>
+</template>
+
+<style lang="scss" scoped>
+ h2 {
+    font-weight: bold;
+    color: #20AD96;
+  }
+</style>

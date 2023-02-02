@@ -1,8 +1,9 @@
 <script>
 import BuildYourDreamsCards from './BuildYourDreamsCards.vue';
+import DataValue from './DataValue.vue';
 export default {
   name: 'AppMain',
-  components: {BuildYourDreamsCards,},
+  components: {BuildYourDreamsCards, DataValue,},
   data() {
     return {
       cardsBuildYourDream: [
@@ -36,8 +37,33 @@ export default {
                 },
                 
                
-            ]  
-    };
+            ],
+      
+      numbers: [
+        {
+          title: '1.926',
+          text: 'FINISHED LESSONS',
+          id: 1,
+        },
+        {
+          title: '3.092+',
+          text: 'ENROLLED LEARNERS',
+          id: 2,
+        },
+        {
+          title: '200',
+          text: 'ONLINE INSTRUCTURES',
+          id: 3,
+        },
+        {
+          title: '100%',
+          text: 'SATISFACTION RATE',
+          id: 4,
+        },
+      ]      
+            
+    };      
+              
   },
   methods: {
     // Your component methods 
@@ -98,13 +124,21 @@ export default {
 
 
     </section>
+
+    <section id="numbers" >
+      <div class="container pt-5">
+        <div class="row">
+          <DataValue v-for="number in numbers" :number="number" :key="number.id"></DataValue>
+        </div>
+      </div>
+    </section>
   </main>
 </template>
 
 <style lang="scss" scoped>
-section {
-  min-height: 400px;
-}
+// section {
+//   min-height: 400px;
+// }
 #career {
 
   .underlay {
@@ -165,6 +199,13 @@ section {
     }
     }
 
+}
+
+#numbers {
+  height: 170px;
+  background-color: #F5F1ED;
+
+ 
 }
 
 
