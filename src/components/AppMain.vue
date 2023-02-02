@@ -253,7 +253,7 @@ export default {
             <p>Multiple Platforms Supported for Teaching & Studying </p> <a href="#"><i class="fa-solid fa-circle-minus text-white"></i></a>
           </div>
           <div class="text-item">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, quae excepturi! Numquam consequatur aspernatur, vitae necessitatibus quod earum dignissimos. Cupiditate excepturi sed dolorem quia quisquam facere quasi delectus tenetur adipisci.</p>
+            <p>MaxCoach supports the act of teaching and learning on multiple platforms like online or offline via material downloads. We know things aren't supposed to be devoured in a short time, you can always access our knowledge base from any device.  </p>
           </div>
           <div class="menu-item d-flex justify-content-between mt-4">
             <p>Multiple Course Partecipatiom at the Same Time </p> <a href="#"><i class="fa-solid fa-circle-plus"></i></a>
@@ -297,9 +297,9 @@ export default {
           </div>
           <ul class="check-list">
             <li><i class="fa-solid fa-check"></i>Select & customize courses to your preferences</li>
-            <li><i class="fa-solid fa-check"></i>Select & customize courses to your preferences</li>
-            <li><i class="fa-solid fa-check"></i>Select & customize courses to your preferences</li>
-            <li><i class="fa-solid fa-check"></i>Select & customize courses to your preferences</li>
+            <li><i class="fa-solid fa-check"></i>Change the tutor and make arrangements</li>
+            <li><i class="fa-solid fa-check"></i>Participate in events to join others</li>
+            <li><i class="fa-solid fa-check"></i>Get the desires certificate delivered at house</li>
             
           </ul>
 
@@ -326,7 +326,7 @@ export default {
           <h6 class="grey-title">WHAT ARE YOU LOOKING FOR?</h6>
           <div>
             <h1>Learn On Your <span class="highlighted">mobile</span> Anytime!</h1> 
-            <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur cupiditate dicta minus eos ratione officia incidunt pariatur deleniti. Sapiente maxime suscipit at tempora voluptates rerum sunt saepe ullam voluptatum facere!</p>       
+            <p class="mt-4">Save lessons for later and revise or write notes at any time and on multiple devices on your way. Never interfere with activities of enjoyment or others precious moments.</p>       
             <a href="#" class="btn btn-green fw-bold my-3">Download our App</a>
           </div>
         </div>
@@ -364,6 +364,7 @@ export default {
       
     </section>
   </main>
+
 </template>
 
 <style lang="scss" scoped>
