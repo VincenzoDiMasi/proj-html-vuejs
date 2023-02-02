@@ -81,11 +81,17 @@ export default {
           <div>
             <h1>Construct A <span class="highlighted">Stunning</span>  <br> Career Perspective</h1>        
           </div>
-          <div class="menu-item d-flex justify-content-between mt-4">
+          <div class="menu-item-green d-flex justify-content-between mt-4">
             <p>Multiple Platforms Supported for Teaching & Studying </p> <a href="#"><i class="fa-solid fa-circle-minus text-white"></i></a>
           </div>
           <div class="text-item">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, quae excepturi! Numquam consequatur aspernatur, vitae necessitatibus quod earum dignissimos. Cupiditate excepturi sed dolorem quia quisquam facere quasi delectus tenetur adipisci.</p>
+          </div>
+          <div class="menu-item d-flex justify-content-between mt-4">
+            <p>Multiple Course Partecipatiom at the Same Time </p> <a href="#"><i class="fa-solid fa-circle-plus"></i></a>
+          </div>
+          <div class="menu-item d-flex justify-content-between mt-4">
+            <p>Track Study Progress & Deliver Prompt Feedback </p> <a href="#"><i class="fa-solid fa-circle-plus"></i></a>
           </div>
         </div>
       </div>
@@ -114,12 +120,15 @@ section {
 
 
   }
-    .menu-item {
+    .menu-item-green {
     background-color: #20AD96;
     border-radius: 10px 10px 0 0 ;
     border: 1px solid #20AD96;
     height: 50px;
     padding: 10px;
+
+    
+    
     
     p {
       color: white;
@@ -129,7 +138,8 @@ section {
   }
 
   .text-item {
-    box-shadow: 2px 4px #dcdbdb;;
+    box-shadow: 2px 4px #dcdbdb;
+    background-color: #f8f8f8;
     border-radius: 0 0 10px 10px;
     padding: 10px;
 
@@ -138,7 +148,25 @@ section {
       font-size: 12px;
     }
   }
+
+.menu-item {
+    height: 50px;
+    padding: 10px;
+    box-shadow: 2px 4px #dcdbdb;
+
+    border: 1px solid white;
+    background-color: #f8f8f8;
+    
+
+    p,.fa-circle-plus {
+      color: #696969;
+      font-weight: bold;
+
+    }
+    }
+
 }
+
 
 
 
