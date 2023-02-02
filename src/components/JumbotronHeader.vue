@@ -50,10 +50,12 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@import "../assets/styles/variables.scss";
+
 #jumbotron {
     // background-image: url("../assets/img/jumbo-overlay.svg");
     // background-repeat: no-repeat;
-    background-color: #F5F1ED;
+    background-color: $bgBeige;
     min-height: 500px;
     position: relative;
     overflow: hidden;

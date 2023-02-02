@@ -28,6 +28,7 @@ export default {
 </template>
 
 <style lang="scss">
+@import "./assets/styles/variables.scss";
 * {
     color: #3F3A64;
 }

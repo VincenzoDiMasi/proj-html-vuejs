@@ -68,12 +68,13 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@import "../assets/styles/variables.scss";
 
 * {
     color: #3F3A64;
 }
 nav {
-    background-color: #F5F1ED;
+    background-color: $bgBeige;
     height: 100px;
     padding-top: 35px;
 

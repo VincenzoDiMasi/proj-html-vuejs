@@ -132,10 +132,17 @@ export default {
         </div>
       </div>
     </section>
+
+    <section id="courses" class="container text-center mt-5">
+      <h6 class="grey-title">CHOOSE WHERE YOU'D LIKE TO BEGAN</h6>
+      <h1>Latest Featured <span class="highlighted">Courses</span></h1>  
+
+    </section>
   </main>
 </template>
 
 <style lang="scss" scoped>
+@import "../assets/styles/variables.scss";
 // section {
 //   min-height: 400px;
 // }
@@ -155,9 +162,9 @@ export default {
 
   }
     .menu-item-green {
-    background-color: #20AD96;
+    background-color: $brandColor;
     border-radius: 10px 10px 0 0 ;
-    border: 1px solid #20AD96;
+    border: 1px solid $brandColor;
     height: 50px;
     padding: 10px;
 
@@ -173,12 +180,12 @@ export default {
 
   .text-item {
     box-shadow: 2px 4px #dcdbdb;
-    background-color: #f8f8f8;
+    background-color: $bgSecondaryColor;
     border-radius: 0 0 10px 10px;
     padding: 10px;
 
     p{
-      color: #696969;
+      color: $textSecondaryColor;
       font-size: 12px;
     }
   }
@@ -189,11 +196,11 @@ export default {
     box-shadow: 2px 4px #dcdbdb;
 
     border: 1px solid white;
-    background-color: #f8f8f8;
+    background-color: $bgSecondaryColor;
     
 
     p,.fa-circle-plus {
-      color: #696969;
+      color: $textSecondaryColor;
       font-weight: bold;
 
     }
@@ -203,10 +210,12 @@ export default {
 
 #numbers {
   height: 170px;
-  background-color: #F5F1ED;
+  background-color: $bgBeige;
 
  
 }
+
+
 
 
 

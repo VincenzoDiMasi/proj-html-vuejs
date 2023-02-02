@@ -33,6 +33,8 @@ props: {
 </template>
 
 <style lang="scss" scoped>
+@import "../assets/styles/variables.scss";
+
 img {
   width: 140px;
   height: 160px;
@@ -45,6 +47,6 @@ img {
 }
 
 .text-prpl {
-    color: #8C89A2;
+    color: $textPrimaryColorLight;
 }
 </style>

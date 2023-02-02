@@ -30,6 +30,7 @@ props: {
 </template>
 
 <style lang="scss" scoped>
+@import "../assets/styles/variables.scss";
 
 div {
     div {
@@ -38,7 +39,7 @@ div {
     }
 }
 .btn-green{
-    background-color: #20AD96;
+    background-color: $brandColor;
     color: white;
 }
 </style>

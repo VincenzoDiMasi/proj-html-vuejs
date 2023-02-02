@@ -29,8 +29,10 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@import "../assets/styles/variables.scss";
+
  h2 {
     font-weight: bold;
-    color: #20AD96;
+    color: $brandColor;
   }
 </style>
