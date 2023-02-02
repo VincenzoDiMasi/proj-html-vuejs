@@ -319,6 +319,8 @@ export default {
       <div  class="row row-cols-2">
        <CardEvents v-for="card in cardsEvent" :card="card" :key="card.id"></CardEvents>
       </div>
+
+      <h5 class="my-5">Excited about our events? <span ><a class="highlighted" href="#">View all events <i class="fa-solid fa-arrow-right-long txt-brnd"></i></a> </span></h5>
     </section>
   </main>
 </template>
@@ -489,6 +491,9 @@ export default {
 #events {
   margin-bottom: 30px;
  
+  .txt-brnd {
+    color: $brandColor;
+  }
 }
 
 </style>

@@ -26,12 +26,12 @@ export default {
           <div class="container">
             <div class="row event-card">
               <div class="col-8 text-start">
-                <h6><i class="fa-solid fa-location-dot"></i>{{ card.gps }}</h6>
-                <h4>{{ card.name }}</h4>
+                <h6 class="grey-title"><i class="fa-solid fa-location-dot"></i>{{ card.gps }}</h6>
+                <h4 class="text-black">{{ card.name }}</h4>
               </div>
               <div class="col-4">
-                <h1>{{ card.day }}</h1>
-                <h5>{{ card.month }}</h5>
+                <h1 class="text-black">{{ card.day }}</h1>
+                <h5 class="text-black">{{ card.month }}</h5>
                 <a href="#" class="btn btn-green fw-bold my-3">{{ card.button }}</a>
 
                
@@ -51,7 +51,9 @@ export default {
   background-color: $bgSecondaryColor;
   margin-bottom: 22px;
 
-
+.fa-location-dot {
+        margin-right: 10px;
+    }
 
  }
 
@@ -63,5 +65,7 @@ export default {
       color: $bgMainColor;
       margin-left: 5px;
     }
+
+    
 }
 </style>
