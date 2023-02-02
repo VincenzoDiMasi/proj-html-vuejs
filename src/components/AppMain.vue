@@ -60,7 +60,71 @@ export default {
           text: 'SATISFACTION RATE',
           id: 4,
         },
-      ]      
+      ],
+      cardsCareer: [
+                {
+                    mainImg: 'src/assets/img/course-02-480x298.jpg',
+                    badge: '$40.00',
+                    proPic: 'src/assets/img/73ee246daf47502812ccefc84bf02898.jpeg',
+                    name: 'Blanche Fields',
+                    text: 'Learning to Write as a Professional Author',
+                    students: '50 students',
+                    lessons: ' 20 lessons',
+                    id: 1
+                },
+                {
+                    mainImg: 'src/assets/img/stock-full-hd-03-480x298.jpg',
+                    badge: 'Free',
+                    proPic: 'src/assets/img/d0d504142acfde820eef2f11feea6253.jpeg',
+                    name: 'Maggie Strickland',
+                    text: 'Customer-centric Info-Tech Strategies',
+                    students: '769 students',
+                    lessons: ' 24 lessons',
+                    id: 2
+                },
+                {
+                    mainImg: 'src/assets/img/stock-full-hd-04-480x298.jpg',
+                    badge: '$19.00',
+                    proPic: 'src/assets/img/d0d504142acfde820eef2f11feea6253.jpeg',
+                    name: 'Maggie Strickland',
+                    text: 'Open Programming Courses for everyone: Python',
+                    students: '62 students',
+                    lessons: ' 17 lessons',
+                    id: 3
+                },
+                {
+                    mainImg: 'src/assets/img/stock-full-hd-06-480x298.jpg',
+                    badge: '$26.00',
+                    proPic: 'src/assets/img/73ee246daf47502812ccefc84bf02898.jpeg',
+                    name: 'Blanche Fields',
+                    text: 'Academic Listenings and Note-taking',
+                    students: '57 students',
+                    lessons: ' 14 lessons',
+                    id: 4
+                },
+                {
+                    mainImg: 'src/assets/img/course-featured-image-01-480x298.jpg',
+                    badge: '$39.00',
+                    proPic: 'src/assets/img/73ee246daf47502812ccefc84bf02898.jpeg',
+                    name: 'Blanche Fields',
+                    text: 'Master jQuery in a Short Period of Time',
+                    students: '51 students',
+                    lessons: ' 6 lessons',
+                    id: 5
+                },
+                {
+                    mainImg: 'src/assets/img/stock-full-hd-05-480x298.jpg',
+                    badge: '$40',
+                    proPic: 'src/assets/img/73ee246daf47502812ccefc84bf02898.jpeg',
+                    name: 'Blanche Fields',
+                    text: 'Introduction to JavaScript for Beginners',
+                    students: '50 students',
+                    lessons: ' 20 lessons',
+                    id: 6
+                },
+                
+               
+            ],      
             
     };      
               
@@ -137,19 +201,19 @@ export default {
       <h6 class="grey-title">CHOOSE WHERE YOU'D LIKE TO BEGAN</h6>
       <h1 class="mb-5">Latest Featured <span class="highlighted">Courses</span></h1>  
       <div class="row row-cols-3">
-        <div class="col mb-4">
+        <div v-for="card in cardsCareer" class="col mb-4">
           <div class="card" style="width: 18rem;">
-            <img src="../assets/img/course-02-480x298.jpg" class="card-img-top" alt="...">
-            <span class="badge-price">$50</span>
+            <img :src="card.mainImg" class="card-img-top" alt="...">
+            <span class="badge-price">{{ card.badge }}</span>
             <div class="card-body ms-4">
               <div class="d-flex">
-                <img class="rounded-image" src="../assets/img/73ee246daf47502812ccefc84bf02898.jpeg" alt="">
-                <h6 class="grey-title ms-3 mt-1">Nome Tizia</h6>
+                <img class="rounded-image" :src="card.proPic" alt="">
+                <h6 class="grey-title ms-3 mt-1">{{ card.name }}</h6>
               </div>
-              <p class="text-start text-black fw-bold mt-2 mb-4">Learning to write as professional tutor</p>
+              <p class="text-start text-black fw-bold mt-2 mb-4">{{ card.text }}</p>
               <div class="d-flex justify-content-between">
-                <span class="numbers-card"><i class="fa-solid fa-sheet-plastic"></i> 20 lessons</span>
-                <span class="numbers-card"><i class="fa-regular fa-user"></i>50 students</span>
+                <span class="numbers-card"><i class="fa-solid fa-sheet-plastic"></i> {{ card.lessons }}</span>
+                <span class="numbers-card"><i class="fa-regular fa-user"></i>{{ card.students }}</span>
               </div>
               
             </div>
@@ -258,7 +322,7 @@ export default {
     top: 0;
     right: 0;
     background-color: $brandColor;
-    width: 65px;
+    width: 80px;
     height: 33px;
     border-radius: 0 0.375rem 0 0;
   }
