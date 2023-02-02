@@ -204,6 +204,7 @@ export default {
       <div class="row row-cols-3">
         <CardCourses v-for="card in cardsCareer" :card="card" :key="card.id" ></CardCourses>
       </div>
+      <a href="#" class="btn btn-green">View all courses<i class="fa-solid fa-arrow-right-long txt-wht"></i></a>
 
     </section>
   </main>
@@ -291,6 +292,15 @@ export default {
     position: relative;
 
   }
+  .btn-green{
+    background-color: $brandColor;
+    color: white;
+
+    .txt-wht {
+      color: $bgMainColor;
+      margin-left: 5px;
+    }
+}
 }
 
 
