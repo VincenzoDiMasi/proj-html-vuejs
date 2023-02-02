@@ -133,11 +133,11 @@ export default {
       </div>
     </section>
 
-    <section id="courses" class="container text-center mt-5 ps-5">
+    <section id="courses" class="container text-center mt-5 ">
       <h6 class="grey-title">CHOOSE WHERE YOU'D LIKE TO BEGAN</h6>
       <h1 class="mb-5">Latest Featured <span class="highlighted">Courses</span></h1>  
       <div class="row row-cols-3">
-        <div class="col">
+        <div class="col mb-4">
           <div class="card" style="width: 18rem;">
             <img src="../assets/img/course-02-480x298.jpg" class="card-img-top" alt="...">
             <div class="card-body ms-4">
@@ -154,6 +154,92 @@ export default {
             </div>
           </div>
         </div>
+        <div class="col mb-4">
+          <div class="card" style="width: 18rem;">
+            <img src="../assets/img/course-02-480x298.jpg" class="card-img-top" alt="...">
+            <div class="card-body ms-4">
+              <div class="d-flex">
+                <img class="rounded-image" src="../assets/img/73ee246daf47502812ccefc84bf02898.jpeg" alt="">
+                <h6 class="grey-title ms-3 mt-1">Nome Tizia</h6>
+              </div>
+              <p class="text-start text-black fw-bold mt-2 mb-4">Learning to write as professional tutor</p>
+              <div class="d-flex justify-content-between">
+                <span class="numbers-card"><i class="fa-solid fa-sheet-plastic"></i> 20 lessons</span>
+                <span class="numbers-card"><i class="fa-regular fa-user"></i>50 students</span>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card" style="width: 18rem;">
+            <img src="../assets/img/course-02-480x298.jpg" class="card-img-top" alt="...">
+            <div class="card-body ms-4">
+              <div class="d-flex">
+                <img class="rounded-image" src="../assets/img/73ee246daf47502812ccefc84bf02898.jpeg" alt="">
+                <h6 class="grey-title ms-3 mt-1">Nome Tizia</h6>
+              </div>
+              <p class="text-start text-black fw-bold mt-2 mb-4">Learning to write as professional tutor</p>
+              <div class="d-flex justify-content-between">
+                <span class="numbers-card"><i class="fa-solid fa-sheet-plastic"></i> 20 lessons</span>
+                <span class="numbers-card"><i class="fa-regular fa-user"></i>50 students</span>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card" style="width: 18rem;">
+            <img src="../assets/img/course-02-480x298.jpg" class="card-img-top" alt="...">
+            <div class="card-body ms-4">
+              <div class="d-flex">
+                <img class="rounded-image" src="../assets/img/73ee246daf47502812ccefc84bf02898.jpeg" alt="">
+                <h6 class="grey-title ms-3 mt-1">Nome Tizia</h6>
+              </div>
+              <p class="text-start text-black fw-bold mt-2 mb-4">Learning to write as professional tutor</p>
+              <div class="d-flex justify-content-between">
+                <span class="numbers-card"><i class="fa-solid fa-sheet-plastic"></i> 20 lessons</span>
+                <span class="numbers-card"><i class="fa-regular fa-user"></i>50 students</span>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card" style="width: 18rem;">
+            <img src="../assets/img/course-02-480x298.jpg" class="card-img-top" alt="...">
+            <div class="card-body ms-4">
+              <div class="d-flex">
+                <img class="rounded-image" src="../assets/img/73ee246daf47502812ccefc84bf02898.jpeg" alt="">
+                <h6 class="grey-title ms-3 mt-1">Nome Tizia</h6>
+              </div>
+              <p class="text-start text-black fw-bold mt-2 mb-4">Learning to write as professional tutor</p>
+              <div class="d-flex justify-content-between">
+                <span class="numbers-card"><i class="fa-solid fa-sheet-plastic"></i> 20 lessons</span>
+                <span class="numbers-card"><i class="fa-regular fa-user"></i>50 students</span>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card" style="width: 18rem;">
+            <img src="../assets/img/course-02-480x298.jpg" class="card-img-top" alt="...">
+            <div class="card-body ms-4">
+              <div class="d-flex">
+                <img class="rounded-image" src="../assets/img/73ee246daf47502812ccefc84bf02898.jpeg" alt="">
+                <h6 class="grey-title ms-3 mt-1">Nome Tizia</h6>
+              </div>
+              <p class="text-start text-black fw-bold mt-2 mb-4">Learning to write as professional tutor</p>
+              <div class="d-flex justify-content-between">
+                <span class="numbers-card"><i class="fa-solid fa-sheet-plastic"></i> 20 lessons</span>
+                <span class="numbers-card"><i class="fa-regular fa-user"></i>50 students</span>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        
         
         
       </div>
@@ -232,12 +318,13 @@ export default {
 #numbers {
   height: 170px;
   background-color: $bgBeige;
+  padding: 0 200px;
 
  
 }
 
 #courses {
-  
+  padding: 0 200px;
   .rounded-image {
     border-radius: 50%;
   }
