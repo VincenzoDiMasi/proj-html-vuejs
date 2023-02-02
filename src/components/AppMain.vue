@@ -198,14 +198,45 @@ export default {
       </div>
     </section>
 
-    <section id="courses" class="container text-center mt-5 ">
-      <h6 class="grey-title">CHOOSE WHERE YOU'D LIKE TO BEGAN</h6>
+    <section id="courses" class=" text-center mt-5 ">
+      <div class="container">
+        <h6 class="grey-title">CHOOSE WHERE YOU'D LIKE TO BEGAN</h6>
       <h1 class="mb-5">Latest Featured <span class="highlighted">Courses</span></h1>  
       <div class="row row-cols-3">
         <CardCourses v-for="card in cardsCareer" :card="card" :key="card.id" ></CardCourses>
       </div>
-      <a href="#" class="btn btn-green">View all courses<i class="fa-solid fa-arrow-right-long txt-wht"></i></a>
+      <a href="#" class="btn btn-green fw-bold mb-5">View all courses<i class="fa-solid fa-arrow-right-long txt-wht"></i></a>
+      </div>
+     
 
+    </section>
+
+    <section id="pace-learn" class="mt-5 container">
+      <div class="row">
+        <div class="col mrgn">
+          <h6 class="grey-title">WHY HESITATE TO REGISTER?</h6>
+          <div>
+            <h1>Learn At Your <br> Own<span class="highlighted">Pace</span></h1>        
+          </div>
+          <ul class="check-list">
+            <li><i class="fa-solid fa-check"></i>Select & customize courses to your preferences</li>
+            <li><i class="fa-solid fa-check"></i>Select & customize courses to your preferences</li>
+            <li><i class="fa-solid fa-check"></i>Select & customize courses to your preferences</li>
+            <li><i class="fa-solid fa-check"></i>Select & customize courses to your preferences</li>
+            
+          </ul>
+
+          <a href="#" class="btn btn-green fw-bold my-3">Get started for free<i class="fa-solid fa-arrow-right-long txt-wht"></i></a>
+
+          
+        </div>
+        <div class="col ms-5 underlay">
+          <!-- <img class="underlay" src="../assets/img/underlay-shape-lilla.svg" alt=""> -->
+          <img src="../assets/img/home-5-image-01.png" alt="">
+          
+        </div>
+        
+      </div>
     </section>
   </main>
 </template>
@@ -287,7 +318,7 @@ export default {
 
 #courses {
   padding: 0 200px;
-
+  background-color: $bgSecondaryColor;
   .row {
     position: relative;
 
@@ -300,6 +331,48 @@ export default {
       color: $bgMainColor;
       margin-left: 5px;
     }
+}
+}
+
+#pace-learn {
+
+  .mrgn {
+    margin-left: 120px;
+
+    .check-list {
+      margin-top: 30px;
+      margin-left: -25px;
+      li {
+        margin-bottom: 10px;
+         .fa-check {
+      color: $brandColor;
+      margin-right: 10px;
+    }
+      }
+
+     
+    }
+    .btn-green{
+    background-color: $brandColor;
+    color: white;
+
+    .txt-wht {
+      color: $bgMainColor;
+      margin-left: 5px;
+    }
+}
+    
+  }
+  .underlay {
+    background-image: url('../assets/img/underlay-shape-grey.svg');
+    background-repeat: no-repeat;
+    background-position: 0% 40%;
+    background-size: 350px;
+
+    img {
+    margin-left: 120px;
+    height: 450px;
+  }
 }
 }
 
