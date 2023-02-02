@@ -125,6 +125,59 @@ export default {
                 },
                 
                
+            ],
+            cardsEvent: [
+                {
+                    gps: 'Texas, U.S.',
+                    name: 'Storytelling Workshop',
+                    day: '22',
+                    month: 'NOV',
+                    button: 'Get ticket',
+                    id: 1
+                },
+                {
+                    gps: 'New York, U.S.',
+                    name: 'Painting Art Contest 2020',
+                    day: '10',
+                    month: 'OCT',
+                    button: 'Get ticket',
+                    id: 2
+                },
+                {
+                    gps: 'Hamburg, Germany',
+                    name: 'International Art Fair 2020',
+                    day: '22',
+                    month: 'JUL',
+                    button: 'Get ticket',
+                    id: 3
+                },
+                {
+                    gps: 'Illinois, U.S.',
+                    name: 'Street Performance: Call for Artist',
+                    day: '15',
+                    month: 'DEC',
+                    button: 'Get ticket',
+                    id: 4
+                },
+                {
+                    gps: 'Illinois, U.S.',
+                    name: 'Consumer Food Safety Education Conference',
+                    day: '22',
+                    month: 'JUL',
+                    button: 'Get ticket',
+                    id: 5
+                },
+                {
+                    gps: 'Dubai',
+                    name: 'How meditation improve your mental health?',
+                    day: '12',
+                    month: 'AUG',
+                    button: 'Get ticket',
+                    id: 6
+                },
+                
+                
+               
             ],      
             
     };      
@@ -259,8 +312,30 @@ export default {
 
     </section>
 
-    <section>
-      
+    <section id="events" class=" text-center mt-5 container">
+      <h6 class="grey-title">GET IN CONTACT NOW</h6>
+      <h1 class="mb-5">Upcoming <span class="highlighted">Events</span></h1>        
+      <div  class="row row-cols-2">
+        <div v-for="card in cardsEvent" class="col">
+          <div class="container">
+            <div class="row event-card">
+              <div class="col-8 text-start">
+                <h6><i class="fa-solid fa-location-dot"></i>{{ card.gps }}</h6>
+                <h4>{{ card.name }}</h4>
+              </div>
+              <div class="col-4">
+                <h1>{{ card.day }}</h1>
+                <h5>{{ card.month }}</h5>
+                <a href="#" class="btn btn-green fw-bold my-3">{{ card.button }}</a>
+
+               
+              </div>
+            </div>
+          </div>
+        </div>
+        
+       
+      </div>
     </section>
   </main>
 </template>
@@ -417,9 +492,7 @@ export default {
 .grey-title {
   margin-top: 80px;
 }
-  
-}
-.btn-green{
+  .btn-green{
     background-color: $brandColor;
     color: white;
 
@@ -428,10 +501,30 @@ export default {
       margin-left: 5px;
     }
 }
+}
+
+#events {
+  margin-bottom: 30px;
+ .event-card {
+  // border: 1px solid black;
+  height: 200px;
+  align-items: center;
+  background-color: $bgSecondaryColor;
+  margin-bottom: 22px;
 
 
 
+ }
 
+ .btn-green{
+    background-color: $brandColor;
+    color: white;
 
+    .txt-wht {
+      color: $bgMainColor;
+      margin-left: 5px;
+    }
+}
+}
 
 </style>
