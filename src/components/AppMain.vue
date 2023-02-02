@@ -538,7 +538,7 @@ export default {
 }
 
 #reviews {
-  background-color: $bgBeige;
+  background-color: $bgSecondaryColor;
   .review-card {
     // border: 1px solid grey;
     background-color: $bgMainColor;
