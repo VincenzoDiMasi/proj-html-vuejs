@@ -2,9 +2,10 @@
 import BuildYourDreamsCards from './BuildYourDreamsCards.vue';
 import DataValue from './DataValue.vue';
 import CardCourses from './CardCourses.vue';
+import CardEvents from './CardEvents.vue';
 export default {
   name: 'AppMain',
-  components: {BuildYourDreamsCards, DataValue, CardCourses,},
+  components: {BuildYourDreamsCards, DataValue, CardCourses, CardEvents,},
   data() {
     return {
       cardsBuildYourDream: [
@@ -316,25 +317,7 @@ export default {
       <h6 class="grey-title">GET IN CONTACT NOW</h6>
       <h1 class="mb-5">Upcoming <span class="highlighted">Events</span></h1>        
       <div  class="row row-cols-2">
-        <div v-for="card in cardsEvent" class="col">
-          <div class="container">
-            <div class="row event-card">
-              <div class="col-8 text-start">
-                <h6><i class="fa-solid fa-location-dot"></i>{{ card.gps }}</h6>
-                <h4>{{ card.name }}</h4>
-              </div>
-              <div class="col-4">
-                <h1>{{ card.day }}</h1>
-                <h5>{{ card.month }}</h5>
-                <a href="#" class="btn btn-green fw-bold my-3">{{ card.button }}</a>
-
-               
-              </div>
-            </div>
-          </div>
-        </div>
-        
-       
+       <CardEvents v-for="card in cardsEvent" :card="card" :key="card.id"></CardEvents>
       </div>
     </section>
   </main>
@@ -505,26 +488,7 @@ export default {
 
 #events {
   margin-bottom: 30px;
- .event-card {
-  // border: 1px solid black;
-  height: 200px;
-  align-items: center;
-  background-color: $bgSecondaryColor;
-  margin-bottom: 22px;
-
-
-
- }
-
- .btn-green{
-    background-color: $brandColor;
-    color: white;
-
-    .txt-wht {
-      color: $bgMainColor;
-      margin-left: 5px;
-    }
-}
+ 
 }
 
 </style>
