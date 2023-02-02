@@ -127,7 +127,7 @@ export default {
                 
                
             ],
-            cardsEvent: [
+       cardsEvent: [
                 {
                     gps: 'Texas, U.S.',
                     name: 'Storytelling Workshop',
@@ -179,7 +179,30 @@ export default {
                 
                 
                
-            ],      
+            ],  
+       cardsReview: [
+                  {
+                    img: 'src/assets/img/testimonial-avata-02.jpg',
+                    text: 'I am free to learn at my own pace, follow my own schedule and choose the subject I like. Great study portal for people like me.',
+                    name: 'MINA HOLLACE',
+                    subtitle: '/Freelancer',
+                    id: 1
+                },
+                {
+                    img: 'src/assets/img/testimonial-avata-01.jpg',
+                    text: 'MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.',
+                    name: 'MADLEY PONDOR',
+                    subtitle: '/IT Specialist',
+                    id: 2
+                },
+                {
+                    img: 'src/assets/img/testimonial-avata-03.jpg',
+                    text: 'I am happy with their arrangement of lessons and subjects. They reflect a scientific investigation.',
+                    name: 'LUVIC DUBBLE',
+                    subtitle: '/Private Tutor',
+                    id: 3
+                },
+       ],            
             
     };      
               
@@ -321,6 +344,24 @@ export default {
       </div>
 
       <h5 class="my-5">Excited about our events? <span ><a class="highlighted" href="#">View all events <i class="fa-solid fa-arrow-right-long txt-brnd"></i></a> </span></h5>
+    </section>
+
+    <section id="reviews" class=" text-center mt-5 ">
+      <div class="container">
+        <h6 class="grey-title pt-5">PEOPLE ARE PRAISING MAX COACH</h6>
+        <h1 class="mb-5">What make they <span class="highlighted">Love Us?</span></h1>  
+        <div class="row row-cols-3">
+          <div v-for="card in cardsReview" class="col">
+            <div class="review-card mb-5">
+              <img class="rounded-image" :src="card.img" alt="">
+              <p>{{ card.text }}</p>
+              <h6 class="text-center">{{ card.name }}</h6>
+              <p class="subtitle grey-title">{{ card.subtitle }}</p>
+            </div>
+          </div>
+        </div>   
+      </div>
+      
     </section>
   </main>
 </template>
@@ -493,6 +534,24 @@ export default {
  
   .txt-brnd {
     color: $brandColor;
+  }
+}
+
+#reviews {
+  background-color: $bgBeige;
+  .review-card {
+    // border: 1px solid grey;
+    background-color: $bgMainColor;
+    margin-top: 150px;
+    border-radius: 20px;
+    height: 400px;
+    padding: 5px;
+    
+
+    .rounded-image {
+      position: relative;
+      bottom: 95px;
+    }
   }
 }
 

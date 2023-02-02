@@ -47,4 +47,8 @@ li {
 .grey-title {
   color: $textSecondaryColor;
 }
+
+.rounded-image {
+    border-radius: 50%;
+  }
 </style>
