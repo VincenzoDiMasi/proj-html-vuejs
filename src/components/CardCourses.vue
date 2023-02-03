@@ -25,7 +25,10 @@ export default {
     <div class="col mb-4">
       <a href="#">
         <div class="card" style="width: 18rem;">
-          <img :src="card.mainImg" class="card-img-top" alt="...">
+          <figure class="card-img-top-box">
+            <img :src="card.mainImg" class="card-img-top" alt="...">
+          </figure>
+          
           <span class="badge-price">{{ card.badge }}</span>
           <div class="card-body ms-4">
             <div class="d-flex">
@@ -49,8 +52,28 @@ export default {
 @import "../assets/styles/variables.scss";
 .card {
       border: 0;
+      background-color: $bgSecondaryColor;
+      
+
     }
   
+    .card:hover {
+      box-shadow: 0 14px 59px rgb(0 0 0 / 12%);
+    }
+
+    .card-img-top-box {
+       overflow: hidden;
+
+       .card-img-top {
+        transition: transform .5s ease;
+       }
+       .card-img-top:hover {
+      transform: scale(1.2); 
+      // overflow: hidden;
+
+    }
+    }
+    
 
   .badge-price {
     color: white;
