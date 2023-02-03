@@ -47,15 +47,19 @@ export default {
 <template>
   <nav>
     <div class="container d-flex justify-content-between">
+        <!-- LOGO -->
         <figure>
                 <a href="#"><img src="../assets/img/dark-logo.png" alt=""></a>
         </figure>
+
+        <!-- MENU NAVBAR -->
         <ul class="d-flex justify-content-between">
         
             <li v-for="link in links"><a href="#">{{ link.text }} <i class="fa-solid fa-caret-down"></i></a></li>
             <li><i class="fa-solid fa-cart-shopping"></i></li>
             <li><i class="fa-regular fa-user"></i></li>
             <li>
+                <!-- SEARCHBAR -->
                 <input class="form-control me-2" type="search" placeholder="Search " aria-label="Search ">               
             </li>
             

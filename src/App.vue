@@ -29,6 +29,9 @@ export default {
 
 <style lang="scss">
 @import "./assets/styles/variables.scss";
+
+//UTILITIES GENERALI
+
 * {
     color: #3F3A64;
 }

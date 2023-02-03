@@ -8,6 +8,7 @@ export default {
   components: {BuildYourDreamsCards, DataValue, CardCourses, CardEvents,},
   data() {
     return {
+      
       cardsBuildYourDream: [
                 {
                     img: 'src/assets/img/home-5-image-box-01.png',
@@ -222,6 +223,7 @@ export default {
 <template>
   <main>
 
+    <!-- BUILD YOUR TEAM -->
     <section id="build-your-team" class="container text-center mt-5">
       <h6 class="grey-title">START LEARNING CODING LANGUAGES</h6>
       <div class="d-flex justify-content-center">
@@ -231,12 +233,14 @@ export default {
       
       <div class="container d-flex mt-5 mb-5">
         <div class="row">
+          <!-- CARD DINAMICALLY GENERATED -->
           <BuildYourDreamsCards v-for="card in cardsBuildYourDream" :card="card" :key="card.id"></BuildYourDreamsCards>
         </div>
       </div>
       
     </section>
 
+    <!-- CAREER SECTION -->
     <section id="career" class="container my-5">
       <div class="row">
         <div class="col ms-5 underlay">
@@ -267,19 +271,23 @@ export default {
 
     </section>
 
+    <!-- DATA VALUE SECTION -->
     <section id="numbers">
       <div class="container pt-5 ">
         <div class="row">
+          <!-- DATA VALUE NUMBERS FROM ARRAY DATA  -->
           <DataValue v-for="number in numbers" :number="number" :key="number.id"></DataValue>
         </div>
       </div>
     </section>
 
+    <!-- COURSES SECTION -->
     <section id="courses" class=" text-center mt-5 ">
       <div class="container">
         <h6 class="grey-title">CHOOSE WHERE YOU'D LIKE TO BEGAN</h6>
       <h1 class="mb-5">Latest Featured <span class="highlighted">Courses</span></h1>  
       <div class="row row-cols-3">
+        <!-- COURSES CARDS FROM ARRAY DATA -->
         <CardCourses v-for="card in cardsCareer" :card="card" :key="card.id" ></CardCourses>
       </div>
       <a href="#" class="btn btn-green fw-bold mb-5">View all courses<i class="fa-solid fa-arrow-right-long txt-wht"></i></a>
@@ -288,6 +296,7 @@ export default {
 
     </section>
 
+    <!-- PACE SECTION -->
     <section id="pace-learn" class="mt-5 container">
       <div class="row">
         <div class="col mrgn">
@@ -296,6 +305,7 @@ export default {
             <h1>Learn At Your <br> Own<span class="highlighted">Pace</span></h1>        
           </div>
           <ul class="check-list">
+            <!-- FEATURES LIST -->
             <li><i class="fa-solid fa-check"></i>Select & customize courses to your preferences</li>
             <li><i class="fa-solid fa-check"></i>Change the tutor and make arrangements</li>
             <li><i class="fa-solid fa-check"></i>Participate in events to join others</li>
@@ -315,6 +325,8 @@ export default {
         
       </div>
     </section>
+
+    <!-- WHERE SECTION -->
     <section id="where-learn" class="mt-5 container">
       <div class="row">
         <div class="col ms-5 underlay">
@@ -336,21 +348,26 @@ export default {
 
     </section>
 
+    <!-- EVENTS SECTION -->
     <section id="events" class=" text-center mt-5 container">
       <h6 class="grey-title">GET IN CONTACT NOW</h6>
       <h1 class="mb-5">Upcoming <span class="highlighted">Events</span></h1>        
       <div  class="row row-cols-2">
+
+        <!-- EVENTS GENERATED FROM ARRAY DATA -->
        <CardEvents v-for="card in cardsEvent" :card="card" :key="card.id"></CardEvents>
       </div>
 
       <h5 class="my-5">Excited about our events? <span ><a class="highlighted" href="#">View all events <i class="fa-solid fa-arrow-right-long txt-brnd"></i></a> </span></h5>
     </section>
 
+    <!-- REVIEWS SECTION -->
     <section id="reviews" class=" text-center mt-5 ">
       <div class="container">
         <h6 class="grey-title pt-5">PEOPLE ARE PRAISING MAX COACH</h6>
         <h1 class="mb-5">What make they <span class="highlighted">Love Us?</span></h1>  
         <div class="row row-cols-3">
+          <!-- REVIEWS FROM ARRAY DATA -->
           <div v-for="card in cardsReview" class="col">
             <div class="review-card mb-5">
               <img class="rounded-image" :src="card.img" alt="">
@@ -364,6 +381,7 @@ export default {
       
     </section>
 
+    <!-- C2A SECTION -->
     <section id="c2a">
       <div class="container">
         <div class="row" style="padding-top: 110px;">

@@ -33,10 +33,14 @@ export default {
 
 <template>
   <section id="jumbotron">
+    <!-- JUMBOTRON IMAGE -->
     <div class="wave"><img src="../assets/img/jumbo-overlay.svg" alt=""></div>
     <div class="container z-ind">
         <div class="row justify-content-between">
+
+          <!-- JUMBOTRON CARD -->
             <div class="col-sm-4">
+
                 <CardJumbotron v-for="card in cards" :card="card" :key="card.id"></CardJumbotron>
             </div>
             <div class="col-sm-8 ">
