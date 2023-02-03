@@ -23,6 +23,7 @@ export default {
 
 <template>
     <div class="col mb-4">
+      <a href="#">
         <div class="card" style="width: 18rem;">
           <img :src="card.mainImg" class="card-img-top" alt="...">
           <span class="badge-price">{{ card.badge }}</span>
@@ -39,6 +40,8 @@ export default {
             
           </div>
         </div>
+      </a>
+        
       </div>
 </template>
 
