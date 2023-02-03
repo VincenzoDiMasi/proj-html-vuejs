@@ -50,10 +50,18 @@ export default {
   align-items: center;
   background-color: $bgSecondaryColor;
   margin-bottom: 22px;
+  transition: 1s linear;
+
 
 .fa-location-dot {
         margin-right: 10px;
     }
+
+ }
+
+ .event-card:hover {
+  box-shadow: 0 14px 59px rgb(0 0 0 / 30%);
+  transition: 1s linear;
 
  }
 

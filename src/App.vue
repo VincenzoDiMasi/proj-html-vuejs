@@ -58,10 +58,14 @@ li {
   .btn-green{
     background-color: $brandColor;
     color: white;
+    transition: 1s;
+
+    
   }
 
   .btn-green:hover {
     background-color: $textPrimaryColor;
     color: white;
+    transition: 1s;
   }
 </style>
