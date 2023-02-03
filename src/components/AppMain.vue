@@ -471,15 +471,13 @@ export default {
     position: relative;
 
   }
-  .btn-green{
-    background-color: $brandColor;
-    color: white;
+ 
 
     .txt-wht {
       color: $bgMainColor;
       margin-left: 5px;
     }
-}
+
 }
 
 #pace-learn {
@@ -500,15 +498,13 @@ export default {
 
      
     }
-    .btn-green{
-    background-color: $brandColor;
-    color: white;
+   
 
     .txt-wht {
       color: $bgMainColor;
       margin-left: 5px;
     }
-}
+
     
   }
   .underlay {
@@ -541,15 +537,13 @@ export default {
 .grey-title {
   margin-top: 80px;
 }
-  .btn-green{
-    background-color: $brandColor;
-    color: white;
+  
 
     .txt-wht {
       color: $bgMainColor;
       margin-left: 5px;
     }
-}
+
 }
 
 #events {
@@ -582,10 +576,9 @@ export default {
   height: 350px;
   background-color: $bgSecondaryColor;
 
-  .btn-green{
-    background-color: $brandColor;
-    color: white;
-  }
+  
+
+  
 }
 
 </style>

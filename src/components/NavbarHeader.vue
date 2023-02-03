@@ -89,7 +89,7 @@ nav {
         margin-right: 30px;
 
         .form-control {
-            bottom: 5px;
+            bottom: 7px;
             position: relative;
         }
     }

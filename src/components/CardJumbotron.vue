@@ -38,8 +38,5 @@ div {
         margin-top: 100px;
     }
 }
-.btn-green{
-    background-color: $brandColor;
-    color: white;
-}
+
 </style>

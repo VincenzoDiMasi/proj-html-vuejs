@@ -51,4 +51,14 @@ li {
 .rounded-image {
     border-radius: 50%;
   }
+
+  .btn-green{
+    background-color: $brandColor;
+    color: white;
+  }
+
+  .btn-green:hover {
+    background-color: $textPrimaryColor;
+    color: white;
+  }
 </style>
