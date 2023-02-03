@@ -64,6 +64,10 @@ export default {
 
         </div>
       </div>
+    <section id="credits" class="text-center">
+      <p>© 2020 MaxCoach, All Rights Reserved</p>
+    </section>
+
     </div>
   </footer>
 </template>
@@ -106,6 +110,14 @@ footer {
 
   .right-list-column {
     margin-left: 50px;
+  }
+
+  #credits {
+    p {
+      font-size: 10px;
+      color: $textSecondaryColor;
+      font-weight: bold;
+    }
   }
 }
 </style>
