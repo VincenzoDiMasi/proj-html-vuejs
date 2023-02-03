@@ -22,7 +22,7 @@ export default {
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-6 py-5">
+        <div class="col-5 py-5">
           <h5>Address</h5>
           <ul>
             <li>382 NE 191st St # 87394, Miami, FL 33179-3899</li>
@@ -35,8 +35,34 @@ export default {
             </li>
           </ul>
         </div>
-        <div class="col-3  py-5"></div>
-        <div class="col-3  py-5"></div>
+        <div class="col-4  py-5">
+          <h5>Explore</h5>
+          <div class="d-flex">
+            <ul>
+              <li><a href="#">Start here</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">About us</a></li>
+
+          </ul>
+          <ul class="right-list-column">
+            <li><a href="#">Success story</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+          </div>
+          
+          
+        </div>
+        <div class="col-3  py-5">
+          <h5>Information</h5>
+          <ul>
+            <li><a href="#">Membership</a></li>
+            <li><a href="#">Purchase guide</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Terms of services</a></li>
+          </ul>  
+
+        </div>
       </div>
     </div>
   </footer>
@@ -65,11 +91,21 @@ footer {
     color: $textSecondaryColor;
     font-size: 12px;
 
+    a {
+    margin-bottom: 12px;
+    color: $textSecondaryColor;
+    font-size: 12px;
+    }
+
     .fa-brands {
     color: $textSecondaryColor;
     margin-right: 20px;
     font-size: 25px;
     }
+  }
+
+  .right-list-column {
+    margin-left: 50px;
   }
 }
 </style>
