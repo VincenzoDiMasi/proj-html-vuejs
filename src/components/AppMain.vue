@@ -363,6 +363,28 @@ export default {
       </div>
       
     </section>
+
+    <section id="c2a">
+      <div class="container">
+        <div class="row" style="padding-top: 110px;">
+          <div class="col-2 left-col">
+            <figure>
+              <img src="../assets/img/maxcoach-shape-01.png" alt="">
+            </figure>
+          </div>
+          <div class="col-8 central-col text-center">
+            <h6 class="">Start today for getting<span class="highlighted">Online Certification</span></h6>
+            <h3 class="">You can be your own guiding star with our help!</h3>
+            <a href="#" class="btn btn-green mt-4">Get started now</a>
+          </div>
+          <div class="col-2 right-col">
+            <figure>
+              <img src="../assets/img/maxcoach-shape-02.png" alt="">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
 </template>
@@ -553,6 +575,16 @@ export default {
       position: relative;
       bottom: 95px;
     }
+  }
+}
+
+#c2a {
+  height: 350px;
+  background-color: $bgSecondaryColor;
+
+  .btn-green{
+    background-color: $brandColor;
+    color: white;
   }
 }
 
