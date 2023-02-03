@@ -49,4 +49,10 @@ img {
 .text-prpl {
     color: $textPrimaryColorLight;
 }
+a:hover {
+  background-color: $textPrimaryColorLight;
+  color: white;
+  border-radius: 20px;
+  padding: 5px 7px;
+}
 </style>

@@ -101,11 +101,19 @@ footer {
     font-size: 12px;
     }
 
+    a:hover {
+      filter: invert(100%)
+    }
+
     .fa-brands {
     color: $textSecondaryColor;
     margin-right: 20px;
     font-size: 25px;
     }
+
+    // .fa-brands:hover {
+    //   filter: invert(100%);
+    // }
   }
 
   .right-list-column {
